@@ -1,0 +1,374 @@
+/**
+ * 1200px Grid System with Rows (20-column)
+ *
+ * Initial CSS generated from Variable Grid System - http://www.spry-soft.com/grids/
+ * Based on 960 Grid System (licensed under GPL and MIT) - http://960.gs/
+ *
+ * This is for a grid 1200px in width, with 20 columns, each column being 40px in
+ * width (usable space) and having a margin of 10px on the left and right, which
+ * creates a gutter space of 20px in between columns. The first and last columns
+ * are 10px away from the edge of the grid.
+ *
+ * One difference from the 960 Grid System is that classes for rows are defined
+ * as well, with the row heights following the column widths. Each row has a margin
+ * of 10px on the top and bottom, creating a gutter space of 20px in between rows.
+ * The first and last rows are 10px away from the edge of the grid. There are 20
+ * row sizes to choose from, based on a viewport of 1200 x 1200.
+ *
+ * As of June 2012, about 90% of web users can view websites within 960 x 600,
+ * with 20% of web users still on 1024 x 768. Following the trend on gs.statcounter.com,
+ * the no. of web users on 1024 x 768 will drop to 10% by 2015, which is when we
+ * can start designing websites viewable within 1200 x 600.
+ *
+ * The 1200 grid is to prepare for the future. Meanwhile, it still can be used
+ * for designing websites within 960 x 600, with additional space on the sides
+ * for advertisements or left blank.
+ *
+ * Rules that just use the widths and heights without margin, float, position
+ * have been added for use in table cells, block elements, images, etc. as
+ * it is difficult at times to do a layout with float involved.
+ * The equivalent for .col_1 is .width_col_1, for .row_1 it is .height_row_1
+ * and so forth.
+ *
+ * Declarations within each rule are ordered alphabetically.
+ *
+ * @author   Ng Kitt Horng, Zion <zion@intzone.com>
+ * @category 1200px Grid System with Rows (20-column)
+ * @link     http://intzone.com/1200gridwithrows
+ * @since    1.0.0 (started 2012-07-08T15:00+0800)
+ * @version  $Revision: 00008 2012-11-02T16:40+08:00 zion.ng $
+ */
+
+/**
+ * Forces backgrounds to span full width, even if there is horizontal scrolling.
+ * Increase this if your layout is wider. Note: IE6 works fine without this fix.
+ */
+body { min-width: 1200px; }
+
+div {
+    /* With box-sizing, borders do not add width or height */
+    /* Use outline instead of border as outline does not add width/height by default */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+/* Containers */
+.container_20 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+
+/* Convenience classes */
+.full_height  { height: 100%; /* for use in child elements to follow parent's height */ }
+.full_width   { width: 100%; /* for use in child elements to follow parent's width */ }
+.col_gutter   { width: 20px; }
+.col_margin   { width: 10px; }
+.margin_auto  { margin: auto; }
+.margin_bottom { margin-bottom: 10px; }
+.margin_left  { margin-left: 10px; }
+.margin_right { margin-right: 10px; }
+.margin_top   { margin-top: 10px; }
+.margin_zero  { margin: 0; }
+.padding_zero { padding: 0; }
+.position_relative { position: relative; }
+.row_gutter   { height: 20px; }
+.row_margin   { height: 10px; }
+
+/* Grid >> Global */
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10,
+.col_11, .col_12, .col_13, .col_14, .col_15, .col_16, .col_17, .col_18, .col_19, .col_20 {
+    display: inline;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.row_1, .row_2, .row_3, .row_4, .row_5, .row_6, .row_7, .row_8, .row_9, .row_10,
+.row_11, .row_12, .row_13, .row_14, .row_15, .row_16, .row_17, .row_18, .row_19, .row_20 {
+    display: inline;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.pushcol_1, .pullcol_1, .pushcol_2, .pullcol_2, .pushcol_3, .pullcol_3,
+.pushcol_4, .pullcol_4, .pushcol_5, .pullcol_5, .pushcol_6, .pullcol_6,
+.pushcol_7, .pullcol_7, .pushcol_8, .pullcol_8, .pushcol_9, .pullcol_9,
+.pushcol_10, .pullcol_10, .pushcol_11, .pullcol_11, .pushcol_12, .pullcol_12,
+.pushcol_13, .pullcol_13, .pushcol_14, .pullcol_14, .pushcol_15, .pullcol_15,
+.pushcol_16, .pullcol_16, .pushcol_17, .pullcol_17, .pushcol_18, .pullcol_18,
+.pushcol_19, .pullcol_19, .pushcol_20, .pullcol_20 {
+    position: relative;
+}
+
+.pushrow_1, .pullrow_1, .pushrow_2, .pullrow_2, .pushrow_3, .pullrow_3,
+.pushrow_4, .pullrow_4, .pushrow_5, .pullrow_5, .pushrow_6, .pullrow_6,
+.pushrow_7, .pullrow_7, .pushrow_8, .pullrow_8, .pushrow_9, .pullrow_9,
+.pushrow_10, .pullrow_10, .pushrow_11, .pullrow_11, .pushrow_12, .pullrow_12,
+.pushrow_13, .pullrow_13, .pushrow_14, .pullrow_14, .pushrow_15, .pullrow_15,
+.pushrow_16, .pullrow_16, .pushrow_17, .pullrow_17, .pushrow_18, .pullrow_18,
+.pushrow_19, .pullrow_19, .pushrow_20, .pullrow_20 {
+    position: relative;
+}
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last) */
+.alphacol { margin-left: 0; }
+.omegacol { margin-right: 0; }
+.alpharow { margin-top: 0; }
+.omegarow { margin-bottom: 0; }
+
+/* Grid >> 20 Columns */
+.container_20 .col_1, .width_col_1 { width: 40px; }
+.container_20 .col_2, .width_col_2 { width: 100px; }
+.container_20 .col_3, .width_col_3 { width: 160px; }
+.container_20 .col_4, .width_col_4 { width: 220px; }
+.container_20 .col_5, .width_col_5 { width: 280px; }
+.container_20 .col_6, .width_col_6 { width: 340px; }
+.container_20 .col_7, .width_col_7 { width: 400px; }
+.container_20 .col_8, .width_col_8 { width: 460px; }
+.container_20 .col_9, .width_col_9 { width: 520px; }
+.container_20 .col_10, .width_col_10 { width: 580px; }
+.container_20 .col_11, .width_col_11 { width: 640px; }
+.container_20 .col_12, .width_col_12 { width: 700px; }
+.container_20 .col_13, .width_col_13 { width: 760px; }
+.container_20 .col_14, .width_col_14 { width: 820px; }
+.container_20 .col_15, .width_col_15 { width: 880px; }
+.container_20 .col_16, .width_col_16 { width: 940px; }
+.container_20 .col_17, .width_col_17 { width: 1000px; }
+.container_20 .col_18, .width_col_18 { width: 1060px; }
+.container_20 .col_19, .width_col_19 { width: 1120px; }
+.container_20 .col_20, .width_col_20 { width: 1180px; }
+
+/* Prefix Extra Space >> 20 Columns */
+.container_20 .prefixcol_1 { padding-left: 60px; }
+.container_20 .prefixcol_2 { padding-left: 120px; }
+.container_20 .prefixcol_3 { padding-left: 180px; }
+.container_20 .prefixcol_4 { padding-left: 240px; }
+.container_20 .prefixcol_5 { padding-left: 300px; }
+.container_20 .prefixcol_6 { padding-left: 360px; }
+.container_20 .prefixcol_7 { padding-left: 420px; }
+.container_20 .prefixcol_8 { padding-left: 480px; }
+.container_20 .prefixcol_9 { padding-left: 540px; }
+.container_20 .prefixcol_10 { padding-left: 600px; }
+.container_20 .prefixcol_11 { padding-left: 660px; }
+.container_20 .prefixcol_12 { padding-left: 720px; }
+.container_20 .prefixcol_13 { padding-left: 780px; }
+.container_20 .prefixcol_14 { padding-left: 840px; }
+.container_20 .prefixcol_15 { padding-left: 900px; }
+.container_20 .prefixcol_16 { padding-left: 960px; }
+.container_20 .prefixcol_17 { padding-left: 1020px; }
+.container_20 .prefixcol_18 { padding-left: 1080px; }
+.container_20 .prefixcol_19 { padding-left: 1140px; }
+
+/* Suffix Extra Space >> 20 Columns */
+.container_20 .suffixcol_1 { padding-right: 60px; }
+.container_20 .suffixcol_2 { padding-right: 120px; }
+.container_20 .suffixcol_3 { padding-right: 180px; }
+.container_20 .suffixcol_4 { padding-right: 240px; }
+.container_20 .suffixcol_5 { padding-right: 300px; }
+.container_20 .suffixcol_6 { padding-right: 360px; }
+.container_20 .suffixcol_7 { padding-right: 420px; }
+.container_20 .suffixcol_8 { padding-right: 480px; }
+.container_20 .suffixcol_9 { padding-right: 540px; }
+.container_20 .suffixcol_10 { padding-right: 600px; }
+.container_20 .suffixcol_11 { padding-right: 660px; }
+.container_20 .suffixcol_12 { padding-right: 720px; }
+.container_20 .suffixcol_13 { padding-right: 780px; }
+.container_20 .suffixcol_14 { padding-right: 840px; }
+.container_20 .suffixcol_15 { padding-right: 900px; }
+.container_20 .suffixcol_16 { padding-right: 960px; }
+.container_20 .suffixcol_17 { padding-right: 1020px; }
+.container_20 .suffixcol_18 { padding-right: 1080px; }
+.container_20 .suffixcol_19 { padding-right: 1140px; }
+
+/* Push Space >> 20 Columns */
+.container_20 .pushcol_1 { left: 60px; }
+.container_20 .pushcol_2 { left: 120px; }
+.container_20 .pushcol_3 { left: 180px; }
+.container_20 .pushcol_4 { left: 240px; }
+.container_20 .pushcol_5 { left: 300px; }
+.container_20 .pushcol_6 { left: 360px; }
+.container_20 .pushcol_7 { left: 420px; }
+.container_20 .pushcol_8 { left: 480px; }
+.container_20 .pushcol_9 { left: 540px; }
+.container_20 .pushcol_10 { left: 600px; }
+.container_20 .pushcol_11 { left: 660px; }
+.container_20 .pushcol_12 { left: 720px; }
+.container_20 .pushcol_13 { left: 780px; }
+.container_20 .pushcol_14 { left: 840px; }
+.container_20 .pushcol_15 { left: 900px; }
+.container_20 .pushcol_16 { left: 960px; }
+.container_20 .pushcol_17 { left: 1020px; }
+.container_20 .pushcol_18 { left: 1080px; }
+.container_20 .pushcol_19 { left: 1140px; }
+
+/* Pull Space >> 20 Columns */
+.container_20 .pullcol_1 { left: -60px; }
+.container_20 .pullcol_2 { left: -120px; }
+.container_20 .pullcol_3 { left: -180px; }
+.container_20 .pullcol_4 { left: -240px; }
+.container_20 .pullcol_5 { left: -300px; }
+.container_20 .pullcol_6 { left: -360px; }
+.container_20 .pullcol_7 { left: -420px; }
+.container_20 .pullcol_8 { left: -480px; }
+.container_20 .pullcol_9 { left: -540px; }
+.container_20 .pullcol_10 { left: -600px; }
+.container_20 .pullcol_11 { left: -660px; }
+.container_20 .pullcol_12 { left: -720px; }
+.container_20 .pullcol_13 { left: -780px; }
+.container_20 .pullcol_14 { left: -840px; }
+.container_20 .pullcol_15 { left: -900px; }
+.container_20 .pullcol_16 { left: -960px; }
+.container_20 .pullcol_17 { left: -1020px; }
+.container_20 .pullcol_18 { left: -1080px; }
+.container_20 .pullcol_19 { left: -1140px; }
+
+/* Grid >> 20 Rows */
+.container_20 .row_1, .height_row_1 { height: 40px; }
+.container_20 .row_2, .height_row_2 { height: 100px; }
+.container_20 .row_3, .height_row_3 { height: 160px; }
+.container_20 .row_4, .height_row_4 { height: 220px; }
+.container_20 .row_5, .height_row_5 { height: 280px; }
+.container_20 .row_6, .height_row_6 { height: 340px; }
+.container_20 .row_7, .height_row_7 { height: 400px; }
+.container_20 .row_8, .height_row_8 { height: 460px; }
+.container_20 .row_9, .height_row_9 { height: 520px; }
+.container_20 .row_10, .height_row_10 { height: 580px; }
+.container_20 .row_11, .height_row_11 { height: 640px; }
+.container_20 .row_12, .height_row_12 { height: 700px; }
+.container_20 .row_13, .height_row_13 { height: 760px; }
+.container_20 .row_14, .height_row_14 { height: 820px; }
+.container_20 .row_15, .height_row_15 { height: 880px; }
+.container_20 .row_16, .height_row_16 { height: 940px; }
+.container_20 .row_17, .height_row_17 { height: 1000px; }
+.container_20 .row_18, .height_row_18 { height: 1060px; }
+.container_20 .row_19, .height_row_19 { height: 1120px; }
+.container_20 .row_20, .height_row_20 { height: 1180px; }
+
+/* Prefix Extra Space >> 20 Rows */
+.container_20 .prefixrow_1 { padding-top: 60px; }
+.container_20 .prefixrow_2 { padding-top: 120px; }
+.container_20 .prefixrow_3 { padding-top: 180px; }
+.container_20 .prefixrow_4 { padding-top: 240px; }
+.container_20 .prefixrow_5 { padding-top: 300px; }
+.container_20 .prefixrow_6 { padding-top: 360px; }
+.container_20 .prefixrow_7 { padding-top: 420px; }
+.container_20 .prefixrow_8 { padding-top: 480px; }
+.container_20 .prefixrow_9 { padding-top: 540px; }
+.container_20 .prefixrow_10 { padding-top: 600px; }
+.container_20 .prefixrow_11 { padding-top: 660px; }
+.container_20 .prefixrow_12 { padding-top: 720px; }
+.container_20 .prefixrow_13 { padding-top: 780px; }
+.container_20 .prefixrow_14 { padding-top: 840px; }
+.container_20 .prefixrow_15 { padding-top: 900px; }
+.container_20 .prefixrow_16 { padding-top: 960px; }
+.container_20 .prefixrow_17 { padding-top: 1020px; }
+.container_20 .prefixrow_18 { padding-top: 1080px; }
+.container_20 .prefixrow_19 { padding-top: 1140px; }
+
+/* Suffix Extra Space >> 20 Rows */
+.container_20 .suffixrow_1 { padding-bottom: 60px; }
+.container_20 .suffixrow_2 { padding-bottom: 120px; }
+.container_20 .suffixrow_3 { padding-bottom: 180px; }
+.container_20 .suffixrow_4 { padding-bottom: 240px; }
+.container_20 .suffixrow_5 { padding-bottom: 300px; }
+.container_20 .suffixrow_6 { padding-bottom: 360px; }
+.container_20 .suffixrow_7 { padding-bottom: 420px; }
+.container_20 .suffixrow_8 { padding-bottom: 480px; }
+.container_20 .suffixrow_9 { padding-bottom: 540px; }
+.container_20 .suffixrow_10 { padding-bottom: 600px; }
+.container_20 .suffixrow_11 { padding-bottom: 660px; }
+.container_20 .suffixrow_12 { padding-bottom: 720px; }
+.container_20 .suffixrow_13 { padding-bottom: 780px; }
+.container_20 .suffixrow_14 { padding-bottom: 840px; }
+.container_20 .suffixrow_15 { padding-bottom: 900px; }
+.container_20 .suffixrow_16 { padding-bottom: 960px; }
+.container_20 .suffixrow_17 { padding-bottom: 1020px; }
+.container_20 .suffixrow_18 { padding-bottom: 1080px; }
+.container_20 .suffixrow_19 { padding-bottom: 1140px; }
+
+/* Push Space >> 20 Rows */
+.container_20 .pushrow_1 { top: 60px; }
+.container_20 .pushrow_2 { top: 120px; }
+.container_20 .pushrow_3 { top: 180px; }
+.container_20 .pushrow_4 { top: 240px; }
+.container_20 .pushrow_5 { top: 300px; }
+.container_20 .pushrow_6 { top: 360px; }
+.container_20 .pushrow_7 { top: 420px; }
+.container_20 .pushrow_8 { top: 480px; }
+.container_20 .pushrow_9 { top: 540px; }
+.container_20 .pushrow_10 { top: 600px; }
+.container_20 .pushrow_11 { top: 660px; }
+.container_20 .pushrow_12 { top: 720px; }
+.container_20 .pushrow_13 { top: 780px; }
+.container_20 .pushrow_14 { top: 840px; }
+.container_20 .pushrow_15 { top: 900px; }
+.container_20 .pushrow_16 { top: 960px; }
+.container_20 .pushrow_17 { top: 1020px; }
+.container_20 .pushrow_18 { top: 1080px; }
+.container_20 .pushrow_19 { top: 1140px; }
+
+/* Pull Space >> 20 Rows */
+.container_20 .pullrow_1 { top: -60px; }
+.container_20 .pullrow_2 { top: -120px; }
+.container_20 .pullrow_3 { top: -180px; }
+.container_20 .pullrow_4 { top: -240px; }
+.container_20 .pullrow_5 { top: -300px; }
+.container_20 .pullrow_6 { top: -360px; }
+.container_20 .pullrow_7 { top: -420px; }
+.container_20 .pullrow_8 { top: -480px; }
+.container_20 .pullrow_9 { top: -540px; }
+.container_20 .pullrow_10 { top: -600px; }
+.container_20 .pullrow_11 { top: -660px; }
+.container_20 .pullrow_12 { top: -720px; }
+.container_20 .pullrow_13 { top: -780px; }
+.container_20 .pullrow_14 { top: -840px; }
+.container_20 .pullrow_15 { top: -900px; }
+.container_20 .pullrow_16 { top: -960px; }
+.container_20 .pullrow_17 { top: -1020px; }
+.container_20 .pullrow_18 { top: -1080px; }
+.container_20 .pullrow_19 { top: -1140px; }
+
+
+/* Clear Floated Elements */
+
+/* http://sonspring.com/journal/clearing-floats */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+.clearfix:before, .clearfix:after,
+.container_20:before, .container_20:after {
+    content: '.';
+    font-size: 0;
+    display: block;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+
+.clearfix:after, .container_20:after { clear: both; }
+
+/**
+ * The following zoom: 1 rule is specifically for IE6 + IE7.
+ * Move to separate stylesheet if invalid CSS is a problem.
+ */
+.clearfix, .container_20 { zoom: 1; }
+
+/* End of CSS */
