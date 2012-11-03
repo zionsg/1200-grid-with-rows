@@ -1,6 +1,8 @@
 1200 Grid with Rows
 ===================
 
+Demo: http://intzone.com/1200gridwithrows/
+
 Initial CSS generated from Variable Grid System - http://www.spry-soft.com/grids/
 Based on 960 Grid System (licensed under GPL and MIT) - http://960.gs/
 
