@@ -1,43 +1,11 @@
 /**
  * 1200px Grid System with Rows (20-column)
  *
- * Initial CSS generated from Variable Grid System - http://www.spry-soft.com/grids/
- * Based on 960 Grid System (licensed under GPL and MIT) - http://960.gs/
- *
- * This is for a grid 1200px in width, with 20 columns, each column being 40px in
- * width (usable space) and having a margin of 10px on the left and right, which
- * creates a gutter space of 20px in between columns. The first and last columns
- * are 10px away from the edge of the grid.
- *
- * One difference from the 960 Grid System is that classes for rows are defined
- * as well, with the row heights following the column widths. Each row has a margin
- * of 10px on the top and bottom, creating a gutter space of 20px in between rows.
- * The first and last rows are 10px away from the edge of the grid. There are 20
- * row sizes to choose from, based on a viewport of 1200 x 1200.
- *
- * As of June 2012, about 90% of web users can view websites within 960 x 600,
- * with 20% of web users still on 1024 x 768. Following the trend on gs.statcounter.com,
- * the no. of web users on 1024 x 768 will drop to 10% by 2015, which is when we
- * can start designing websites viewable within 1200 x 600.
- *
- * The 1200 grid is to prepare for the future. Meanwhile, it still can be used
- * for designing websites within 960 x 600, with additional space on the sides
- * for advertisements or left blank.
- *
- * Rules that just use the widths and heights without margin, float, position
- * have been added for use in table cells, block elements, images, etc. as
- * it is difficult at times to do a layout with float involved.
- * The equivalent for .col_1 is .width_col_1, for .row_1 it is .height_row_1
- * and so forth.
- *
- * Declarations within each rule are ordered alphabetically.
- *
- * @author   Zion Ng <zion@intzone.com>
- * @category 1200px Grid System with Rows (20-column)
- * @link     [Demo]   http://intzone.com/1200gridwithrows
- * @link     [Source] https://github.com/zionsg/1200-grid-with-rows
- * @since    1.0.0 (started 2012-07-08T15:00+0800)
- * @version  $Revision: 00009 2012-11-03T19:00+08:00 zion.ng $
+ * @author  Zion Ng <zion@intzone.com>
+ * @link    [Demo]   http://intzone.com/1200gridwithrows
+ * @link    [Source] https://github.com/zionsg/1200-grid-with-rows
+ * @since   1.0.0 (started 2012-07-08T15:00+0800)
+ * @version $Revision: 00010 2012-11-23T10:45+08:00 zion.ng $
  */
 
 /**
@@ -47,57 +15,57 @@
 body { min-width: 1200px; }
 
 div {
-    /* With box-sizing, borders do not add width or height */
-    /* Use outline instead of border as outline does not add width/height by default */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    box-sizing: border-box;         /* Opera/IE 8+ */
+  /* With box-sizing, borders do not add width or height */
+  /* Use outline instead of border as outline does not add width/height by default */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
 /* Containers */
 .container_20 {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
 }
 
 /* Convenience classes */
-.full_height  { height: 100%; /* for use in child elements to follow parent's height */ }
-.full_width   { width: 100%; /* for use in child elements to follow parent's width */ }
-.col_gutter   { width: 20px; }
-.col_margin   { width: 10px; }
-.margin_auto  { margin: auto; }
+.full_height   { height: 100%; /* for use in child elements to follow parent's height */ }
+.full_width    { width: 100%;  /* for use in child elements to follow parent's width */ }
+.col_gutter    { width: 20px; }
+.col_margin    { width: 10px; }
+.margin_auto   { margin: auto; }
 .margin_bottom { margin-bottom: 10px; }
-.margin_left  { margin-left: 10px; }
-.margin_right { margin-right: 10px; }
-.margin_top   { margin-top: 10px; }
-.margin_zero  { margin: 0; }
-.padding_zero { padding: 0; }
+.margin_left   { margin-left: 10px; }
+.margin_right  { margin-right: 10px; }
+.margin_top    { margin-top: 10px; }
+.margin_zero   { margin: 0; }
+.padding_zero  { padding: 0; }
 .position_relative { position: relative; }
-.row_gutter   { height: 20px; }
-.row_margin   { height: 10px; }
+.row_gutter    { height: 20px; }
+.row_margin    { height: 10px; }
 
 /* Grid >> Global */
 .col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10,
 .col_11, .col_12, .col_13, .col_14, .col_15, .col_16, .col_17, .col_18, .col_19, .col_20 {
-    display: inline;
-    float: left;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    position: relative;
+  display: inline;
+  float: left;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  position: relative;
 }
 
 .row_1, .row_2, .row_3, .row_4, .row_5, .row_6, .row_7, .row_8, .row_9, .row_10,
 .row_11, .row_12, .row_13, .row_14, .row_15, .row_16, .row_17, .row_18, .row_19, .row_20 {
-    display: inline;
-    float: left;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    position: relative;
+  display: inline;
+  float: left;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  position: relative;
 }
 
 .pushcol_1, .pullcol_1, .pushcol_2, .pullcol_2, .pushcol_3, .pullcol_3,
@@ -107,7 +75,7 @@ div {
 .pushcol_13, .pullcol_13, .pushcol_14, .pullcol_14, .pushcol_15, .pullcol_15,
 .pushcol_16, .pullcol_16, .pushcol_17, .pullcol_17, .pushcol_18, .pullcol_18,
 .pushcol_19, .pullcol_19, .pushcol_20, .pullcol_20 {
-    position: relative;
+  position: relative;
 }
 
 .pushrow_1, .pullrow_1, .pushrow_2, .pullrow_2, .pushrow_3, .pullrow_3,
@@ -117,7 +85,7 @@ div {
 .pushrow_13, .pullrow_13, .pushrow_14, .pullrow_14, .pushrow_15, .pullrow_15,
 .pushrow_16, .pullrow_16, .pushrow_17, .pullrow_17, .pushrow_18, .pullrow_18,
 .pushrow_19, .pullrow_19, .pushrow_20, .pullrow_20 {
-    position: relative;
+  position: relative;
 }
 
 /* Grid >> Children (Alpha ~ First, Omega ~ Last) */
@@ -354,14 +322,14 @@ div {
 /* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
 .clearfix:before, .clearfix:after,
 .container_20:before, .container_20:after {
-    content: '.';
-    font-size: 0;
-    display: block;
-    height: 0;
-    line-height: 0;
-    overflow: hidden;
-    visibility: hidden;
-    width: 0;
+  content: '.';
+  font-size: 0;
+  display: block;
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
 }
 
 .clearfix:after, .container_20:after { clear: both; }
