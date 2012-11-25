@@ -4,6 +4,7 @@
 Demo: http://intzone.com/1200gridwithrows/
 
 Initial CSS generated from Variable Grid System - http://www.spry-soft.com/grids/
+
 Based on 960 Grid System (licensed under GPL and MIT) - http://960.gs/
 
 This is for a grid 1200px in width, with 20 columns, each column being 40px in
