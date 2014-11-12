@@ -1,7 +1,7 @@
 1200 Grid with Rows
 ===================
 
-Demo: http://intzone.com/1200gridwithrows/
+Demo: http://demo.intzone.com/1200gridwithrows/
 
 Initial CSS generated from Variable Grid System - http://www.spry-soft.com/grids/
 
